@@ -1,0 +1,11 @@
+using System;
+
+namespace Project1S3G4.Models
+{
+    public class ErrorViewModel
+    {
+        public string RequestId { get; set; }
+
+        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+    }
+}
