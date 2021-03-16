@@ -1,6 +1,19 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
+@model IEnumerable<string>
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<head>
+
+</head>
+<body>
+    <header>Available Times</header>
+    @foreach(string i in Model)
+    {
+        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SignUp">sign up for @i</a>
+        
+    }
+
+
+</body>
